@@ -50,7 +50,7 @@ async function getBookByIsbn(isbn) {
 
   let fromServer = await addBookToListForReading(result);
   console.log(fromServer, new Date());
-  showInTextarea(fromServer);
+  showInTextarea(fromServer); //
 }
 function clearTable() {
   document.getElementById("viewport-table-body").innerHTML = "";
